@@ -49,3 +49,8 @@ dvc add data_given/winequality.csv
 
 do git add . && git commit -m "first commit"
 
+git add . && git commit -m "first commit"
+git remote add origin https://github.com/vaibhavyaramwar/dvcdemo.git
+git branch -M main
+git push -u origin main
+
