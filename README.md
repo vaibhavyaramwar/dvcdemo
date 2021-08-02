@@ -47,3 +47,5 @@ dvc add data_given/winequality.csv
 '''
 
 
+do git add . && git commit -m "first commit"
+
