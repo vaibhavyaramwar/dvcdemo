@@ -1,4 +1,8 @@
 dvc
 dvc[gdrive]
-sklearn
-pandas
+sklearn~=0.0
+pandas~=1.1.5
+PyYAML~=5.4.1
+scikit-learn~=0.24.2
+numpy~=1.19.5
+joblib~=1.0.1
