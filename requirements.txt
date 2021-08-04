@@ -1,3 +1,8 @@
+# local packages
+-e .
+
+# third party packages
+
 dvc
 dvc[gdrive]
 sklearn~=0.0

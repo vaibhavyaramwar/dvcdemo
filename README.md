@@ -1,56 +1,70 @@
-create env
+create env 
 
-'''
-    bash
-    conda create -n wineq  python 3.7 -y
-'''
+```bash
+conda create -n wineq python=3.7 -y
+```
 
 activate env
+```bash
+conda activate wineq
+```
 
-'''
-    conda activate wineq
-'''
+created a req file
 
-create requirements.txt file and install requirements
-
-'''bash
-    
+install the req
+```bash
 pip install -r requirements.txt
+```
+download the data from 
 
-'''
+https://drive.google.com/drive/folders/18zqQiCJVgF7uzXgfbIJ-04zgz1ItNfF5?usp=sharing
 
-Download Wine Quality data from kaggle and copy in data_given folder:
-
-'''
-    https://www.kaggle.com/uciml/red-wine-quality-cortez-et-al-2009
-'''
-
-initiate git
-
-'''
+```bash
 git init
-'''
-
-
-initiate dvc
-
-'''
-dvc init
-'''
-
-
-
-add dataset
-
-'''
+```
+```bash
+dvc init 
+```
+```bash
 dvc add data_given/winequality.csv
-'''
+```
+```bash
+git add .
+```
+```bash
+git commit -m "first commit"
+```
 
+oneliner updates  for readme
 
-do git add . && git commit -m "first commit"
-
-git add . && git commit -m "first commit"
-git remote add origin https://github.com/vaibhavyaramwar/dvcdemo.git
+```bash
+git add . && git commit -m "update Readme.md"
+```
+```bash
+git remote add origin https://github.com/c17hawke/simple-dvc-demo.git
 git branch -M main
-git push -u origin main
+git push origin main
+```
 
+tox command -
+```bash
+tox
+```
+for rebuilding -
+```bash
+tox -r 
+```
+pytest command
+```bash
+pytest -v
+```
+
+setup commands -
+```bash
+pip install -e . 
+```
+
+build your own package commands- 
+```bash
+python setup.py sdist bdist_wheel
+```
