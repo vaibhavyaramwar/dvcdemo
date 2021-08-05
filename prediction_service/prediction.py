@@ -6,7 +6,7 @@ import numpy as np
 
 params_path = "params.yaml"
 schema_path = os.path.join("prediction_service", "schema_in.json")
-
+#schema_path = "prediction_service\schema_in.json"
 
 class NotInRange(Exception):
     def __init__(self, message="Values entered are not in expected range"):
