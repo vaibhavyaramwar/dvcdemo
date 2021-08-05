@@ -16,3 +16,6 @@ tox
 
 # below library is used for styling the code
 flake8
+
+flask
+gunicorn
