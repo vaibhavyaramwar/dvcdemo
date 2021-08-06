@@ -5,8 +5,8 @@ import joblib
 import numpy as np
 
 params_path = "params.yaml"
-schema_path = os.path.join("prediction_service", "schema_in.json")
-#schema_path = "prediction_service\schema_in.json"
+#schema_path = os.path.join("prediction_service", "schema_in.json")
+schema_path = "..\schema_in.json"
 
 class NotInRange(Exception):
     def __init__(self, message="Values entered are not in expected range"):
@@ -67,6 +67,7 @@ def validate_input(dict_request):
 
 
 def form_response(dict_request):
+    print(os.getcwd())
     if validate_input(dict_request):
         data = dict_request.values()
         data = [list(map(float, data))]
